@@ -257,6 +257,7 @@
         padding: 2rem 0;
         text-align: center;
         margin-top: auto;
+        font-size: 0.875rem; /* 14px */
       }
 
       /* --- Desktop / Larger Screens --- */
@@ -1644,7 +1645,7 @@
         cursor: pointer;
       }
 
-      /* --- SEO Text Section --- */
+      /* --- SEO / Content Page Text --- */
       .seo-text-section {
         padding: 40px 0 !important;
         background-color: white;
@@ -1652,16 +1653,17 @@
       }
 
       .seo-title {
-        font-size: 1.5rem;
+        font-size: 1rem; /* 16px */
         font-weight: 700;
         color: #000;
         margin-bottom: 20px;
+        line-height: 1.4;
       }
 
       .seo-content {
-        font-size: 0.9rem;
-        color: #666; /* Grey text */
-        line-height: 1.8;
+        font-size: 0.875rem; /* 14px */
+        color: #666;
+        line-height: 1.6;
         text-align: justify;
       }
 
@@ -1681,6 +1683,37 @@
 
       .seo-content strong {
         color: #333;
+        font-size: 0.875rem; /* 14px */
+      }
+
+      @media (max-width: 767px) {
+        .seo-text-section {
+          padding: 16px 0 20px !important;
+        }
+
+        .seo-text-section .container {
+          padding: 0 12px;
+        }
+
+        .seo-title {
+          font-size: 1rem; /* 16px */
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .seo-content {
+          font-size: 0.875rem; /* 14px */
+          line-height: 1.5;
+          text-align: left;
+        }
+
+        .seo-content p {
+          margin-bottom: 10px;
+        }
+
+        .seo-content p:last-child {
+          margin-bottom: 0;
+        }
       }
 
       /* Remove underline from specific See More links */
